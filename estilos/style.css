@@ -28,7 +28,7 @@ section#login{
     position: absolute;
     top: 50%;
     left: 50%;
-    transform: translate(-50%, -50%);
+    
 
     /* tudo que estiver fora da borda fica escondido. a imagem não ficou mais com a ponta.
     Ficou arredondada. */
@@ -40,7 +40,7 @@ section#login{
     border-radius: 20px;
 
     box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.517);
-
+    transform: translate(-50%, -50%);
     /* Fazer uam animação quando for mudar de telas. Celuar, tablte, etc. Transition */
 
     /* transition: width .2s, height .2s;
@@ -73,6 +73,7 @@ div#formulario > p{
 
 form > div.campo{
     background-color: #5f2c82;
+    border: 1px solid #5f2c82;
     display: block;
     width: 100%;
     height: 40px;
@@ -84,6 +85,34 @@ form > div.campo{
 
 div.campo > label{
     display: none;
+}
+
+
+div.campo > span{
+    color: aliceblue;
+    /* background-color: black; */
+    font-size: 2em;
+    width: 40px;
+    padding: 5px;
+
+}
+
+div.campo > input{
+    background-color: rgb(132, 224, 224);
+    font-size:1em;
+    width: calc(100% - 45px);
+    
+    height: 100%;
+    border: 0px;
+    border-radius: 10px;
+    padding: 4px;
+    transform: translateY( -12px);
+
+}
+
+div.campo > input:focus-within{
+    background-color: aliceblue;
+
 }
 
 
