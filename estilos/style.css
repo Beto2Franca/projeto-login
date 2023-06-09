@@ -30,8 +30,8 @@ section#login{
     left: 50%;
     transform: translate(-50%, -50%);
 
-    /* tudo que estiver fora da borda fica escondido. a imagem não ficou mais com a ponta
-    ficou arredondada. */
+    /* tudo que estiver fora da borda fica escondido. a imagem não ficou mais com a ponta.
+    Ficou arredondada. */
     overflow: hidden;  
 
     background-color: aliceblue;
@@ -40,6 +40,11 @@ section#login{
     border-radius: 20px;
 
     box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.517);
+
+    /* Fazer uam animação quando for mudar de telas. Celuar, tablte, etc. Transition */
+
+    transition: width .2s, height .2s;
+    transition-timing-function: ease;
 }
 
 section#login > div#imagem{
